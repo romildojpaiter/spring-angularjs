@@ -10,6 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Component
 class DummyBookRepository implements BookRepository {
+	
   private final Map<Integer, Book> books = new ConcurrentHashMap<Integer, Book>();
 
   @Override

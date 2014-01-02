@@ -1,0 +1,18 @@
+<h2>Carros <a class="btn btn-primary pull-right" href="#/carros/new"><i class="icon-plus-sign icon-white"></i> Adicionar Novo</a></h2>
+
+<table class="table table-striped">
+    <tr ng-repeat="carro in carros">
+        <td>{{carro.modelo}}</td>
+        <td>{{carro.marca}}</td>
+        <td>
+            <div class="pull-right">
+                <a class="btn btn-info" href="#/carros/{{carro.id}}">
+                    <i class="icon-pencil icon-white"></i> Edit
+                </a>
+                <button class="btn btn-danger" ng-click="deleteCarro(carro)">
+                    <i class="icon-trash icon-white"></i> Delete
+                </button>
+            </div>
+        </td>
+    </tr>
+</table>

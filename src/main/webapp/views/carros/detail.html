@@ -1,0 +1,18 @@
+<form novalidate class="form-horizontal" ng-submit="salvarCarro()">
+    <div class="control-group">
+        <label class="control-label" for="title">Modelo</label>
+        <div class="controls">
+            <input type="text" ng-model="carro.modelo" id="title"/>
+        </div>
+    </div>
+    <fieldset>
+        <legend>Marca</legend>
+        <div class="control-group">
+            <label class="control-label" for="marcaCarro">Marca</label>
+            <div class="controls">
+                <input type="text" ng-model="carro.marca" id="marcaCarro"/>
+            </div>
+        </div>
+    </fieldset>
+    <button id="save" class="btn btn-primary">Salvar</button>
+</form>
